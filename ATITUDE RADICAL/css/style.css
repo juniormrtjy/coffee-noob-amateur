@@ -1,0 +1,78 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.resize {
+  display: none;
+}
+/* ========== ROOT ========== */
+:root {
+  --hue: 6;
+  --height-topbot: 3rem;
+  --main-color: hsl(var(--hue) 75% 57%);
+  --light-color: hsl(var(--hue) 73% 72%);
+  --dark-color: hsl(var(--hue) 59% 26%);
+  --alt-dark-color: hsl(var(--hue) 28% 32%);
+  --alt-main-color: hsl(var(--hue) 59% 45%);
+  --black: hsl(0 0% 5%);
+  --white: hsl(0 0% 100%);
+}
+/* ========== LAYOUT ========== */
+.container {
+  margin-left: 1.56rem;
+  margin-right: 1.56rem;
+}
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+section {
+  padding-top: var(--height-topbot);
+  padding-bottom: var(--height-topbot);
+}
+/* ========== HEADER ========== */
+.overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* z-index: 3; */
+}
+#header {
+  background-image: url('../imagens/tree-geae9c9fca_1280 01.png');
+  background-size: cover;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding-top: var(--height-topbot);
+  padding-bottom: var(--height-topbot);
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.1rem;
+}
+nav img {
+  width: 112px;
+  height: 68px;
+}
+#intro .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  background-color: var(--main-color);
+  border-radius: 0.75rem;
+  color: var(--white);
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+}
